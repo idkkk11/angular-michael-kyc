@@ -1,0 +1,28 @@
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.michaels {
+    font-family: 'Cormorant';
+    text-transform: uppercase;
+    color: #00AEF0;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+}
+
+.vl {
+  border-left: 1px solid black;
+  height: 3.5rem;
+}
+
+.kyc-checklist {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}

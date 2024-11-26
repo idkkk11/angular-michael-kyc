@@ -1,0 +1,17 @@
+.container {
+    background-color: #F1F1F1;
+    width: 100%;
+    padding: 1rem 1.5rem;
+    box-sizing: border-box;
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.clients {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+

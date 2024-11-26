@@ -1,0 +1,8 @@
+<div class="container">
+    <h1 class="clients">Clients</h1>
+    <app-list-header></app-list-header>
+    <div *ngFor="let client of clients" class="kyc-customer-list">
+        <app-list-item [client]="client"></app-list-item>
+      </div>
+    <!-- <ng-content></ng-content> -->
+</div>

@@ -1,0 +1,33 @@
+.container {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 24px;
+    box-sizing: border-box;
+    border-radius: 0.8rem;
+}
+
+.header-items-left {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+}
+
+.header-items-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 15%;
+}
+
+.header-item {
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 25%;
+}
+
+#status {
+    width: auto;
+}
