@@ -1,0 +1,21 @@
+<div class="form-container">
+    <h2>Create New Client</h2>
+    <form (ngSubmit)="onSubmit()" #clientForm="ngForm">
+      <label for="firstName">First Name</label>
+      <input type="text" id="firstName" name="firstName" [(ngModel)]="newClient.firstName" required />
+  
+      <label for="lastName">Last Name</label>
+      <input type="text" id="lastName" name="lastName" [(ngModel)]="newClient.lastName" required />
+  
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" [(ngModel)]="newClient.email" required />
+  
+      <label for="phone">Phone</label>
+      <input type="text" id="phone" name="phone" [(ngModel)]="newClient.phone" required />
+  
+      <label for="address">Address</label>
+      <textarea id="address" name="address" [(ngModel)]="newClient.address" required></textarea>
+  
+      <button type="submit">Create Client</button>
+    </form>
+  </div>

@@ -29,5 +29,46 @@
 }
 
 #status {
+    background-color: #f1f1f1;
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1rem;
     width: auto;
+}
+
+
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    height: full;
+    align-items: center;
+    width: 25%;
+}
+
+.button {
+    width: 1rem;
+    height: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border-radius: 100%;
+}
+
+#complete {
+    background-color: #8CD47E;
+}
+#incomplete {
+    background-color: #FF6961;
+}
+#edit {
+    background-color: #F8D66D;
+}
+#trash {
+    background-color: #F1F1F1;
 }

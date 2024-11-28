@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-detail-customer-checklist',
@@ -7,11 +8,15 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class DetailCustomerChecklistComponent implements OnInit {
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
 
-  @Input() checklist: any; // Receive data from parent
+  @Input() checklist: any; @Input() customerId: string; // Receive data from parent
+
+  redirectNewChecklistItem(id: string) {
+    this.router.navigate(['/new/checklist-item', id])
+  }
 
 }

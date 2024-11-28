@@ -1,10 +1,16 @@
 <div class="container">
-    <h1 class="clients">Clients</h1>
+    <div class="title-area">
+        <h1 class="clients">Clients</h1>
+        <div class="add-button" (click)="redirectNewClient()">
+            <i class="ri-add-line"></i>
+            New Client
+        </div>
+    </div>
     <app-list-header></app-list-header>
     <div *ngFor="let client of clients" class="kyc-customer-list">
         <app-list-item [client]="client"></app-list-item>
-      </div>
-    
+    </div>
+
     <!-- <ng-content></ng-content> -->
 </div>
 <p id="eol">END OF LIST</p>

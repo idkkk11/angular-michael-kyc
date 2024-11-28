@@ -1,4 +1,10 @@
 <div class="container">
-   <app-detail-customer-info></app-detail-customer-info> 
-   <app-detail-customer-checklist [checklist]="checklistItems"></app-detail-customer-checklist>  
+    <div class="top-container">
+        <app-detail-customer-info [customer]="customer"></app-detail-customer-info>
+        <div (click)="completeKyc()">
+            <div *ngIf="areAllChecklistItemsCompleted()" class="complete-button">Declare Verified</div>
+        </div>
+    </div>
+    <app-detail-customer-checklist [customerId]="customerId"
+        [checklist]="checklistItems"></app-detail-customer-checklist>
 </div>

@@ -9,10 +9,25 @@
     gap: 1.5rem;
 }
 
+.title-area {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .clients {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 1.5rem;
+}
+
+.add-button {
+    padding: 0.4rem 1rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
 }
 
 #eol {

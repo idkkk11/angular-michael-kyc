@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CustomerService } from 'src/app/services/customer.service';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-list-container',
@@ -8,38 +9,25 @@ import { CustomerService } from 'src/app/services/customer.service';
 })
 export class ListContainerComponent implements OnInit {
 
-    // clients = [
-    //     {
-    //         firstName: 'John',
-    //         lastName: 'Doe',
-    //         email: 'johndoe@gmail.com',
-    //         phone: '+44 1234 567890',
-    //         status: 'In Progress'
-    //     },
-    //     {
-    //         firstName: 'Jane',
-    //         lastName: 'Smith',
-    //         email: 'janesmith@gmail.com',
-    //         phone: '+44 9876 543210',
-    //         status: 'Completed'
-    //     }
-    // ];
-
     clients: any[] = [];
 
-    constructor(private customerService: CustomerService) { }
+    constructor(private customerService: CustomerService, private router: Router) { }
 
     ngOnInit(): void {
         // Fetch data from the API when the component initializes
     this.customerService.getCustomers().subscribe(
         (data) => {
           this.clients = data;
-          console.log('Customers fetched:', data); // Debugging
+          console.log('Customers fetched:', data);
         },
         (error) => {
           console.error('Error fetching customers:', error);
         }
       );
+    }
+
+    redirectNewClient() {
+        this.router.navigate(['/new/client'])
     }
 
 }
