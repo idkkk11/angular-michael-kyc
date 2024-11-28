@@ -1,0 +1,11 @@
+<div class="container">
+<h1>Items</h1>
+<app-detail-customer-checklist-header></app-detail-customer-checklist-header>
+<!-- <div>
+    <app-detail-customer-checklist-row></app-detail-customer-checklist-row>
+</div> -->
+<div *ngFor="let item of checklist">
+    <app-detail-customer-checklist-row [checklistItem]="item"></app-detail-customer-checklist-row>
+  </div>
+</div>
+<p id="eol">END OF LIST</p>

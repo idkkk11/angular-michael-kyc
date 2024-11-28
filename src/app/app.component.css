@@ -6,11 +6,6 @@
     gap: 1rem;
 }
 
-#eol {
-    width: 100%;
-    text-align: center;
-}
-
 .table {
     display: flex;
     flex-direction: column;

@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
     selector: 'app-list-item',
@@ -8,9 +9,13 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ListItemComponent implements OnInit {
     @Input() client: any;
 
-    constructor() { }
+    constructor(private router: Router) { }
 
     ngOnInit(): void {
+    }
+
+    goToCustomerDetail(id: number) {
+        this.router.navigate(['/customer', id])
     }
 
 }

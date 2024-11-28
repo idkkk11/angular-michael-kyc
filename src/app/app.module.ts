@@ -7,6 +7,12 @@ import { LogoComponent } from './components/logo/logo.component';
 import { ListContainerComponent } from './components/list-container/list-container.component';
 import { ListItemComponent } from './components/list-item/list-item.component';
 import { ListHeaderComponent } from './components/list-header/list-header.component';
+import { DetailContainerComponent } from './components/detail-container/detail-container.component';
+import { DetailCustomerInfoComponent } from './components/detail-customer-info/detail-customer-info.component';
+import { DetailCustomerChecklistComponent } from './components/detail-customer-checklist/detail-customer-checklist.component';
+import { DetailCustomerChecklistRowComponent } from './components/detail-customer-checklist-row/detail-customer-checklist-row.component';
+import { ChipComponent } from './components/chip/chip.component';
+import { DetailCustomerChecklistHeaderComponent } from './components/detail-customer-checklist-header/detail-customer-checklist-header.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +20,13 @@ import { ListHeaderComponent } from './components/list-header/list-header.compon
     LogoComponent,
     ListContainerComponent,
     ListItemComponent,
-    ListHeaderComponent
+    ListHeaderComponent,
+    DetailContainerComponent,
+    DetailCustomerInfoComponent,
+    DetailCustomerChecklistComponent,
+    DetailCustomerChecklistRowComponent,
+    ChipComponent,
+    DetailCustomerChecklistHeaderComponent
   ],
   imports: [
     BrowserModule,
